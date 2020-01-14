@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+/*------general css-------*/
+*{
+    margin: 0px;
+    color: gray;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    background: #f1f1f1 !important;
+    /* height: 1324px; */
+
+}
+
+/*------display options------*/
+
+.disable{
+    display: none;
+}
+
+div.in{
+    display: inline;
+}
+
+.oneo, .twoo, .onee{
+    display: none;
+}
+
+.home{
+    display: block;
+}
+
+.thecart, .theprofile{
+    display: none;
+}
+
+/*-----bars-------*/
+button{
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 12px;
+}
+
+button img{
+    width: 30px;
+    height: 30px;
+}
+
+
+/*-----fixed nav-----*/
+.bar{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: #f1f1f1;
+    border-bottom: 1px solid rgb(236, 236, 236);
+}
+
+/*---other part of website---*/
+.next{
+    margin-top: 60px;
+}
+
+/*-----home icon----*/
+
+.fa-home{
+    font-size: 16pt;
+}
+
+/*-----soft UI-----*/
+.soft{
+    justify-content: center;
+    max-width: 100%;
+    margin: 10px;
+    /* padding: 20px; */
+    border-radius:7px;
+    background: #f1f1f1;
+    box-shadow:-7px -7px 21px #ffffff, 7px 7px 21px #e2e2e2;
+    -webkit-border-radius:7px;
+    -moz-border-radius:7px;
+    -ms-border-radius:7px;
+    -o-border-radius:7px;
+}
+
+
+.icons{
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+
+/*----search engine-----*/
+.searchs{
+    position: fixed;
+    width: 50%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+    
+input[type=text] {
+    width: 95%;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    padding: 12px 6px;
+    text-align: center;
+}
+
+input[type=text]:focus{
+    /* outline: none; */
+    outline: 1px solid rgb(209, 209, 209);
+    text-align: center;
+
+}
+/*------------*/
+.multi{
+    width: 80%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*-----cart and profile----*/
+
+.other .one{
+    position: absolute;
+    top: 0;
+    padding: 10px;
+    left: 90%;
+    transform: translateX(-85%);
+    margin-top: 10px;
+}
+.other .two{
+    position: absolute;
+    top: 0;
+    padding: 10px;
+    left: 95%;
+    transform: translateX(-95%);
+    margin-top: 10px;
+}
+
+.in{
+    padding: 10px;
+}
+
+.option{
+    padding: 30px;
+}
+
+.one, .two, a:visited{
+    color: gray;
+}
+
+div.card{
+
+    /* width: 300px;*/
+    height: 300px; 
+    margin-top: 60px;
+    /* padding: 20px; */
+    border-radius:7px;
+    background: #f1f1f1;
+    box-shadow:-7px -7px 21px #ffffff, 7px 7px 21px #e2e2e2;
+    -webkit-border-radius:7px;
+    -moz-border-radius:7px;
+    -ms-border-radius:7px;
+    -o-border-radius:7px;
+}
+
+
+img.image{
+    width: 150px;
+    height: 150px;
+    text-align: center;
+}
+/* 
+.card-disp{
+    width: 60%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  } */
+
+
+
+/*---cart page----*/
+
+/*---empty---*/
+
+.cart-emp{
+    padding: 20px;
+    /* text-decoration: underline; */
+}
+
+.to-home{
+    padding: 0;
+    /* margin: 0; */
+}
+
+
+/*------bootstrap------*/
+.container {
+    
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+  
+@media (min-width: 240px) {
+    .container {
+      max-width: 230px;
+      /* height: 500px; */
+    }
+}
+
+@media (min-width: 340px) {
+    .container {
+      max-width: 330px;
+      /* height: 500px; */
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+      max-width: 500px;
+    }
+}
+  
+@media (min-width: 768px) {
+    .container {
+      max-width: 520px;
+    }
+}
+  
+@media (min-width: 992px) {
+    .container {
+      max-width: 560px;
+    }
+}
+  
+@media (min-width: 1200px) {
+    .container {
+      max-width: 700px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    input[type=text] {
+        width: 90%;
+    }
+
+    .other .one{
+        left: 88%;
+        transform: translate(-88%);
+        -webkit-transform: translate(-88%);
+        -moz-transform: translate(-88%);
+        -ms-transform: translate(-88%);
+        -o-transform: translate(-88%);
+}
+}
+
+@media screen and (max-width:700px){
+    .other .one{
+        left: 86%;
+        transform: translate(-86%);
+        -webkit-transform: translate(-86%);
+        -moz-transform: translate(-86%);
+        -ms-transform: translate(-86%);
+        -o-transform: translate(-86%);
+}
+}
+
+@media screen and (max-width:520px){
+    .other .one, .other .two{
+    display: none;
+    }
+
+    input[type=text] {
+        width: 85%;
+    }
+
+    input[type=text]:focus{
+        outline: none;
+    }
+
+    .searchs{
+        position: fixed;
+        width: 70%;
+        top: 0;
+        left: 85%;
+        transform: translateX(-90%);
+        -webkit-transform: translateX(-90%);
+        -moz-transform: translateX(-90%);
+        -ms-transform: translateX(-90%);
+        -o-transform: translateX(-90%);
+}
+
+    #panel, #flip {
+        padding: 5px;
+        text-align: center;
+    }
+      
+    #panel {
+        margin: 0px;
+        display: none;
+    }
+
+    .disable{
+        display: inline;
+    }
+
+
+    .oneo,.twoo,.onee, a:visited{
+        display: block;
+        color: gray;
+        max-width: 120px;
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    .fas{
+        padding-right: 20px;
+    }
+
+
+    .dis2{
+        display: none;
+    }
+
+    .cart-emp{
+
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:340px){
+    input[type=text] {
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width:250px){
+    input[type=text] {
+        width: 75%;
+    }
+}
+
